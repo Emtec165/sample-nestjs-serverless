@@ -13,6 +13,11 @@ export class HyperController {
     return this.service.getHype();
   }
 
+  @Get('all')
+  getAllHype() {
+    return this.service.getAllHype();
+  }
+
   @Post()
   postHype(@Body() body: PostHypeDto) {
     return this.service.postHype(body);

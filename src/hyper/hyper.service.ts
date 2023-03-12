@@ -14,6 +14,10 @@ export class HyperService {
     return "{be hyped}";
   }
 
+  getAllHype() {
+    return this.repository.find()
+  }
+
   postHype(dto: PostHypeDto) {
     const hyper = this.repository.create(dto);
     return this.repository.save(hyper);
