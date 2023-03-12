@@ -1,5 +1,5 @@
-// import { NestFactory } from '@nestjs/core';
-// import { AppModule } from './app.module';
+// import { NestFactory } from "@nestjs/core";
+// import { AppModule } from "./app.module";
 //
 // async function bootstrap() {
 //   const app = await NestFactory.create(AppModule);
@@ -7,10 +7,10 @@
 // }
 // bootstrap();
 
-import { NestFactory } from '@nestjs/core';
-import serverlessExpress from '@vendia/serverless-express';
-import { Callback, Context, Handler } from 'aws-lambda';
-import { AppModule } from './app.module';
+import { NestFactory } from "@nestjs/core";
+import serverlessExpress from "@vendia/serverless-express";
+import { Callback, Context, Handler } from "aws-lambda";
+import { AppModule } from "./app.module";
 
 let server: Handler;
 

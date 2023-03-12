@@ -10,11 +10,16 @@ export class HyperController {
 
   @Get()
   getHype(): string {
-    return "{be hyped}";
+    return this.service.getHype();
+  }
+
+  @Get('all')
+  getAllHype() {
+    return this.service.getAllHype();
   }
 
   @Post()
-  postHype(@Body() body: PostHypeDto): PostHypeDto {
-    return body;
+  postHype(@Body() body: PostHypeDto) {
+    return this.service.postHype(body);
   }
 }
